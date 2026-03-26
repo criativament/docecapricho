@@ -48,23 +48,30 @@
   border: none;
 }
 
-  .hero {
-  padding: 18px 18px 0;
+ .hero {
+  padding: 18px;
 }
 
-  .hero img {
+/* Moldura grande (essa é a área que você circulou) */
+.foto-moldura {
+  padding: 14px; /* controla a grossura externa */
+  border-radius: 30px;
+
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+
+  box-shadow: 0 12px 30px rgba(120, 74, 105, 0.25);
+}
+
+/* Imagem dentro */
+.foto-moldura img {
   width: 100%;
-  height: 320px;
+  height: 260px; /* deixa menor */
   object-fit: cover;
   object-position: center top;
   display: block;
-  border-radius: 28px;
-  border: 10px solid transparent;
-  background:
-    linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4) border-box;
-}
 
+  border-radius: 20px;
+}
   .content {
     padding: 18px 18px 22px;
     background: linear-gradient(
@@ -208,9 +215,11 @@
 <body>
   <main class="page">
     <section class="card">
-      <div class="hero">
-                   <img src="docecapricho.png" alt="Doce Capricho">
-            </div>
+     <div class="hero">
+  <div class="foto-moldura">
+    <img src="docecapricho.png" alt="Doce Capricho">
+  </div>
+</div>
 
       <div class="content">
         <div class="badge">🍭 Doces e lembrancinhas para momentos especiais</div>
