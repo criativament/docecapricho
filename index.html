@@ -51,7 +51,7 @@
       border: 1px solid rgba(255,255,255,0.45);
     }
 .hero {
-  padding: 18px;
+  padding: 18px 18px 0;
 }
  .hero img {
   width: 100%;
@@ -59,14 +59,17 @@
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 24px;
+  border-radius: 28px;
 
-  border: 3px solid transparent;
+  border: 6px solid transparent;
+
   background:
     linear-gradient(#fff, #fff) padding-box,
     linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4) border-box;
 
-  box-shadow: 0 12px 28px rgba(120, 74, 105, 0.18);
+  box-shadow:
+    0 12px 28px rgba(120, 74, 105, 0.18),
+    0 0 0 8px rgba(255, 240, 247, 0.6);
 }
 
     .content {
@@ -80,16 +83,19 @@
     }
 
     .badge {
-      width: fit-content;
-      margin: 0 auto 12px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, #ffd6ea, #ffeef7);
-      color: var(--pink-dark);
-      font-size: 12px;
-      font-weight: 700;
-      box-shadow: inset 0 0 0 1px rgba(233, 95, 162, 0.15);
-    }
+  width: fit-content;
+  margin: 0 auto 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #e0f2ff, #f0f9ff);
+  color: #1d4ed8;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  box-shadow: inset 0 0 0 1px rgba(29, 78, 216, 0.15);
+}
 
   h1 {
   text-align: center;
@@ -162,13 +168,13 @@
     }
 
     .footer {
-      text-align: center;
-      margin-top: 18px;
-      color: var(--pink-dark);
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 1.4;
-    }
+  text-align: center;
+  margin-top: 18px;
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
 
     @media (max-width: 430px) {
       body {
