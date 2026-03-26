@@ -39,7 +39,7 @@
   .card {
   width: 100%;
   max-width: 390px;
-  background: rgba(255, 255, 255, 0.88);
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 30px;
@@ -52,15 +52,7 @@
   padding: 18px;
 }
 
-/* Moldura grande (essa é a área que você circulou) */
-.foto-moldura {
-  padding: 14px; /* controla a grossura externa */
-  border-radius: 30px;
 
-  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-
-  box-shadow: 0 12px 30px rgba(120, 74, 105, 0.25);
-}
 
 /* Imagem dentro */
 .foto-moldura img {
@@ -216,9 +208,7 @@
   <main class="page">
     <section class="card">
      <div class="hero">
-  <div class="foto-moldura">
     <img src="docecapricho.png" alt="Doce Capricho">
-  </div>
 </div>
 
       <div class="content">
